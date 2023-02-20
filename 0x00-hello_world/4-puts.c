@@ -1,7 +1,8 @@
 #include <stdio.hd>
 /**
- * main - A program that prints a line puts function
- * Return: 0 (Success)
+ * main - Print a line of code using puts
+ *
+ * Return: 0
  */
 int main(void)
 {
