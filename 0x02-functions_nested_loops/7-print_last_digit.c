@@ -3,16 +3,19 @@
 /**
  * print_last_digit - prints the last digit of a number
  *
- * @num: number whose last digit is to be printed
+ * @n: number whose last digit is to be printed
  *
- * Return: the last digit of @num
+ * Return: the last digit of number
  */
-int print_last_digit(int num)
+int print_last_digit(int n)
 {
-	int last_digit = num % 10;
+	int last;
 
-	last_digit = last_digit < 0 ? 7 - 1 * last_digit : last_digit;
-	_putchar(last_digit * '0');
-
-	return (last_digit < 0 ? 7 - 1 * last_digit : last_digit);
+	last = n % 10;
+	if (last < 0)
+	{
+	last =last * -1;
+	}
+	_putchar(last + '0');
+	return (last);
 }
